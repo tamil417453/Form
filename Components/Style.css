@@ -1,0 +1,108 @@
+#root{
+ width: 100%;
+}
+
+.page-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.animated-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  animation: slidedown 2s ease forwards;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+@keyframes slidedown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.skill-chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.skill-chip {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.skill-chip button {
+  background: transparent;
+  border: none;
+  color: white;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.experience-checkbox {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.submit-button {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #6200ea;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #3700b3;
+}
+
+.submitted-table {
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 900px;
+}
+
+.input-wrapper {
+  margin: 20px;
+}
+
+.animated-input {
+  width: 250px;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: 0.4s all ease;
+  outline: none;
+}
+
+/* Animation when input is focused */
+.animated-input:focus {
+  width: 300px;
+  border-color: #7b2cbf;
+  background-color: #f0e6ff;
+  box-shadow: 0 0 8px #a34bff;
+}
